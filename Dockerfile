@@ -3,7 +3,7 @@ FROM python:3.12-alpine3.20
 
 # Set the working directory
 WORKDIR /app
-EXPOSE 8080
+
 # Copy all files from the current directory to the container's /app directory
 COPY . .
 
@@ -34,6 +34,4 @@ RUN pip3 install --no-cache-dir --upgrade pip \
     && python3 -m pip install -U yt-dlp
 
 # Set the command to run the application
-CMD ["sh", "-c", "gunicorn app:app & python3 modules/main.py"]
-
-
+CMD ["sh", "-c", "gunicorn app:app & python3 main.py"]
