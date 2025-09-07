@@ -9,6 +9,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "8315210181:AAHdlM7ZJirGIcsuLLUxje8u2ab13fo
 
 OWNER = int(environ.get("OWNER", "7968237251"))
 CREDIT = environ.get("CREDIT", "Harry")
+REPO_URL = environ.get("REPO_URL", "https://github.com/Harrytt345/saini-txt-direct
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 
 TOTAL_USER = os.environ.get('TOTAL_USERS', '7968237251').split(',')
@@ -33,5 +34,6 @@ photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png' #https:
 photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
 photozip = 'https://envs.sh/cD_.jpg'
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.
+
 
 
