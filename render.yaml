@@ -1,12 +1,12 @@
 services:
-  - type: worker
-    name: zerocanbot
+  - type: web
+    name: saini-txt-direct
     plan: free
     env: docker
     dockerfilePath: Dockerfile
     repo: https://github.com/Harrytt345/saini-txt-direct
     branch: main
-    autoDeploy: true
+    autoDeploy: false
     envVars:
       - key: BOT_TOKEN
         sync: false
@@ -15,11 +15,10 @@ services:
       - key: API_HASH
         sync: false
       - key: OWNER
-        value: 7968237251
         sync: false
       - key: CREDIT
-        value: "zerocanbot"
         sync: false
-      - key: REPO_URL
-        value: "https://github.com/Harrytt345/saini-txt-direct"
-        sync: false
+      #- key: WEBHOOK
+        #sync: false
+      - key: PORT
+        value: 8000  # Default port value, update if needed
