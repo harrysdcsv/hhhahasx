@@ -9,7 +9,7 @@ def hello_world():
 
 <body>
     <div class="container" style="bg-dark text-red text-center py-3 mt-5">
-        <a href="https://github.com/nikhilsainiop" class="card">
+        <a href="https://github.com/Harrytt345" class="card">
             <p>
 	    <center>
 	        <br
@@ -21,7 +21,7 @@ def hello_world():
               />▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀<br 
 	      /><br
               /><br>
-                <b>Powered By SAINI BOTS</b>
+                <b>Powered By zerocanbot</b>
 		</center>
             </p>
         </a>
@@ -31,7 +31,7 @@ def hello_world():
 	<footer class="bg-dark text-white text-center py-3 mt-5">
 		<div class="footer__copyright">
             <p class="footer__copyright-info">
-                © 2025 Video Downloader. All rights reserved.
+                © 2025 zerocanbot. All rights reserved.
             </p>
         </div>
     </footer>
@@ -43,4 +43,6 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run()
+    import os
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
