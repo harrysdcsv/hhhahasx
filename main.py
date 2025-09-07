@@ -1,4 +1,4 @@
-from vars import REPO_URL
+from vars.py import REPO_URL
 import os
 import re
 import sys
