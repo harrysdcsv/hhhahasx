@@ -1,4 +1,4 @@
-from vars import https://github.com/Harrytt345/saini-txt-direct
+from vars import REPO_URL
 import os
 import re
 import sys
